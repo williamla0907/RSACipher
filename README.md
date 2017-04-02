@@ -1,1 +1,12 @@
-# RSACipher
+# RSACipher written in java
+-	The program will use RSA Algorithm to encrypt and decrypt data
+-	The program will generate random public and private key pair.
+-	Choose p and q bigger than 256bits.
+-	n = p*q.
+-	0(n) = (p-1)*(q-1).
+-	Choose e so that gcd(e,0(n)) = 1.
+-	Find d which is a multiplicative inverse of e mod 0(n)
+-	Public key consists of e and n.
+-	Private key consists of d and n.
+-	Encryption will be done by c = m^e mod n, m<n
+-	Decryption will be done by m = c^d mod n
